@@ -1,0 +1,81 @@
+$font: "Montserrat",
+sans-serif;
+$colour1: #F4F6F6;
+$colour1-opaque: rgba(244, 246, 246, 0.5);
+$colour2: #959294;
+$colour2-opaque: rgba(149, 146, 148, 0.5);
+$colour3: #F1BA18;
+$colour3-opaque: rgba(241, 186, 24, 0.5);
+$colour4: #93593D;
+$colour4-opaque: rgba(147, 89, 61, 0.5);
+$colour5: #302A37;
+$index-back: #f4f6f6,
+#e0e3e4,
+#ced0d1,
+#bcbdbf,
+#abaaad,
+#9a989c,
+#8a878c,
+#7b767b,
+#686269,
+#554e58,
+#423c47,
+#302a37;
+
+$profile-back: #f4f6f6,
+#cbf5eb,
+#b1f0cb,
+#b0e79c,
+#c4d965,
+#d7bb49,
+#e49c40,
+#e97b47,
+#c65a5c,
+#944862,
+#5d3a55,
+#302a37;
+
+$skills-back: #959294,
+#b6929e,
+#da9095,
+#f4927e,
+#ff9d5b,
+#f69d4c,
+#ec9d3c,
+#e19d2b,
+#d18933,
+#bf7839,
+#aa673c,
+#93593d;
+
+$summary-back: #959294,
+#7b767b,
+#625b63,
+#49424c,
+#302a37;
+
+$icon1: '\f007';
+$icon2: '\f7d9';
+$icon3: '\f1c2';
+$icon4: '\f302';
+$icon5: '\f19d';
+$icon6: '\f2b9';
+$icon7: '\f074';
+$icon8: '\F015';
+
+@mixin icons($icon) {
+    content: $icon;
+    font-family: 'Font Awesome 5 free';
+    font-size: 1.2em;
+    font-weight: 900;
+    padding-left: 4px;
+    color: $colour4;
+}
+
+@mixin body($back) {
+    font-family: $font;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right top, $back);
+}
