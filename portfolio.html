@@ -1,18 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Portfolio</title>
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="shortcut icon" href="./images/joeicon.png" type="image/x-icon" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		/>
-	</head>
-	<body>
-		<h1>Portfolio</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/joeicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Static squares start -->
+    <div id="static-square1"></div>
+    <div id="static-square2"></div>
+    <div id="static-square3"></div>
+    <!-- Static squares end -->
+
+    <!-- Animated floating squares start -->
+    <section class="animated-squares">
+      <div class="set">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="set set2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="set set3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Animated floating squares end -->
+
+    <!-- Main portfolio wrapper start -->
+    <main class="portfolio-wrapper">
+      <!-- Menu start -->
+      <section class="menu-wrap">
+        <a href="./index.html"
+          ><li id="home">
+            <div class="content">
+              <h5>Home</h5>
+            </div>
+          </li></a
+        >
+        <a href="./about.html"
+          ><li id="about">
+            <div class="content">
+              <h5>About me</h5>
+            </div>
+          </li></a
+        >
+
+        <a href="./summary.html"
+          ><li id="summary">
+            <div class="content">
+              <h5>Professional Summary</h5>
+            </div>
+          </li></a
+        >
+
+        <a href="./contact.html"
+          ><li id="contact">
+            <div class="content">
+              <h5>Contact me</h5>
+            </div>
+          </li></a
+        >
+      </section>
+      <!-- Menu end -->
+
+      <!-- Portfolio section start -->
+      <section class="portfolio animated bounceInDown delay-2s">
+        <div class="rotate">
+          <div class="back">
+            <p>
+              Created with React.js on the frontend and postgreSQL and Node.js
+              on the backend. It gets all information from the Marvel api.
+            </p>
+            <a
+              href="https://marvellous-characters.herokuapp.com/"
+              target="blank"
+              >Marvel-Characters</a
+            >
+          </div>
+          <div class="front" id="marvel"></div>
+        </div>
+        <div class="rotate">
+          <div class="back">
+            <p>
+              Created for a Berlin artist's portfolio. Written with React.js.
+              Images and information from the Flickr api.
+            </p>
+            <a href="https://norbert.herokuapp.com/" target="blank"
+              >Norbert Karrass</a
+            >
+          </div>
+          <div class="front" id="norbert"></div>
+        </div>
+        <div class="rotate">
+          <div class="back">
+            <p>
+              This site was written in a little Bootstrap, Sass and HTML. Part
+              of the DCI course work.
+            </p>
+            <a href="http://spain.goldencat.co.uk/" target="blank"
+              >Spanish Culture</a
+            >
+          </div>
+          <div class="front" id="spain"></div>
+        </div>
+        <div class="rotate">
+          <div class="back">
+            <p>
+              Written in HTML and CSS. Part of the DCI course work.
+            </p>
+            <a href="http://bianchi.goldencat.co.uk/" target="blank"
+              >Bianchi Oltre XR1</a
+            >
+          </div>
+          <div class="front" id="bianchi"></div>
+        </div>
+        <div class="rotate">
+          <div class="back">
+            <p>
+              Written in HTML and CSS. Part of the DCI course work.
+            </p>
+            <a href="http://london.goldencat.co.uk/" target="blank">London</a>
+          </div>
+          <div class="front" id="london"></div>
+        </div>
+        <div class="rotate">
+          <div class="back">
+            <p>
+              Written in HTML and CSS. Part of the DCI course work.
+            </p>
+            <a href="http://teryaki.goldencat.co.uk" target="blank">Teryaki</a>
+          </div>
+          <div class="front" id="teryaki"></div>
+        </div>
+      </section>
+      <!-- Portfolio section end -->
+    </main>
+    <!-- portfolio wrapper end -->
+
+    <!-- Footer start -->
+    <footer>
+      <p>&copy; Joseph Urbina 2019</p>
+      <a href="https://github.com/jsk900" target="blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://linkedin.com/in/joseph-urbina-5024a78/" target="blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </footer>
+    <!-- Footer end -->
+  </body>
 </html>

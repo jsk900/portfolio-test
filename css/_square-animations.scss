@@ -1,8 +1,9 @@
-// Animated blobs for home page
-.animated-blobs {
+// Animated background squares for contact page
+.animated-squares {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 
   .set {
     position: absolute;
@@ -21,7 +22,6 @@
       width: 10%;
       height: 15%;
       background-color: $colour1;
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
       animation: animate 15s linear infinite;
       animation-delay: -7s;
     }
@@ -31,7 +31,6 @@
       width: 5%;
       height: 10%;
       background-color: $colour2;
-      border-radius: 82% 18% 29% 71% / 81% 62% 38% 19%;
       animation: animate 20s linear infinite;
       animation-delay: -5s;
     }
@@ -41,7 +40,6 @@
       width: 2%;
       height: 5%;
       background-color: $colour3;
-      border-radius: 47% 53% 29% 71% / 6% 62% 38% 94%;
       animation: animate 25s linear infinite;
     }
 
@@ -50,7 +48,6 @@
       width: 15%;
       height: 15%;
       background-color: $colour4;
-      border-radius: 89% 11% 75% 25% / 6% 62% 38% 94%;
       animation: animate 15s linear infinite;
       animation-delay: -5s;
     }
@@ -60,7 +57,6 @@
       width: 5%;
       height: 15%;
       background-color: $colour5;
-      border-radius: 33% 67% 89% 11% / 6% 21% 79% 94%;
       animation: animate 18s linear infinite;
       animation-delay: -10s;
     }
@@ -70,7 +66,6 @@
       width: 10%;
       height: 20%;
       background-color: $colour3;
-      border-radius: 33% 67% 89% 11% / 63% 21% 79% 37%;
       animation: animate 12s linear infinite;
     }
 
@@ -79,7 +74,6 @@
       width: 10%;
       height: 15%;
       background-color: $colour1;
-      border-radius: 95% 5% 98% 2% / 63% 21% 79% 37%;
       animation: animate 14s linear infinite;
     }
 
@@ -88,7 +82,6 @@
       width: 3%;
       height: 4%;
       background-color: $colour4;
-      border-radius: 54% 46% 37% 63% / 82% 84% 16% 18%;
       animation: animate 15s linear infinite;
     }
   }

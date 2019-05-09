@@ -1,0 +1,254 @@
+// Skills grid start
+.skills-grid {
+  margin: 6% 0 0 12%;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px; //Three columns
+  grid-template-rows: repeat(8, 30px); // Eight rows
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  // Resizing grid for mobile devices
+  @include mobile {
+    margin: 15% 0 0 0;
+    width: 100%;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: repeat(8, 15px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  h3 {
+    grid-row: 1 / 9;
+    grid-column: 1;
+    color: $colour1;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: $colour5;
+    padding: 0 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    border-bottom: 3px solid $colour5;
+
+    @include mobile {
+      font-size: 0.4em;
+    }
+  }
+
+  .skills {
+    border-bottom: 3px solid $colour5;
+    width: 100%;
+    cursor: pointer;
+
+    p {
+      color: $colour5;
+      padding: 4px 20px 0;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      @include mobile {
+        font-size: 0.4em;
+      }
+    }
+  }
+
+  .percent {
+    font-size: 0.8em;
+    color: $colour1;
+    padding: 8px 0 0;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    @include mobile {
+      font-size: 0.6em;
+    }
+  }
+
+  .percent:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(4) {
+    grid-row: 4;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(5) {
+    grid-row: 5;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(6) {
+    grid-row: 6;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(7) {
+    grid-row: 7;
+    grid-column: 3;
+  }
+
+  .percent:nth-of-type(8) {
+    grid-row: 8;
+    grid-column: 3;
+  }
+
+  #one {
+    grid-row: 1;
+    grid-column: 2;
+    animation: html 2s 1 linear forwards;
+  }
+
+  #two {
+    grid-row: 2;
+    grid-column: 2;
+    animation: css 2s 1 linear forwards;
+  }
+
+  #three {
+    grid-row: 3;
+    grid-column: 2;
+    animation: sass 2s 1 linear forwards;
+  }
+
+  #four {
+    grid-row: 4;
+    grid-column: 2;
+    animation: javascript 2s 1 linear forwards;
+  }
+
+  #five {
+    grid-row: 5;
+    grid-column: 2;
+    animation: react 2s 1 linear forwards;
+  }
+
+  #six {
+    grid-row: 6;
+    grid-column: 2;
+    animation: node 2s 1 linear forwards;
+  }
+
+  #seven {
+    grid-row: 7;
+    grid-column: 2;
+    animation: photoshop 2s 1 linear forwards;
+  }
+
+  #eight {
+    grid-row: 8;
+    grid-column: 2;
+    animation: fireworks 2s 1 linear forwards;
+  }
+}
+
+@keyframes html {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 82%;
+  }
+}
+
+@keyframes sass {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 70%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 60%;
+  }
+}
+
+@keyframes react {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 40%;
+  }
+}
+
+@keyframes node {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 40%;
+  }
+}
+
+@keyframes photoshop {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 60%;
+  }
+}
+
+@keyframes fireworks {
+  0% {
+    background-color: $colour3-opaque;
+    width: 0;
+  }
+
+  100% {
+    background-color: $colour3-opaque;
+    width: 70%;
+  }
+}
+// Skills grid end

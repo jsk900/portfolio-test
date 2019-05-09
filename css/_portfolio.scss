@@ -1,0 +1,124 @@
+// Portfolio start
+.portfolio-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .portfolio {
+    margin-top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include mobile {
+      margin: 8% 0 0 2%;
+    }
+
+    .rotate {
+      margin-bottom: 2%;
+      width: 400px;
+      height: 190px;
+
+      @include mobile {
+        width: 200px;
+        height: 90px;
+      }
+    }
+
+    .rotate > .front {
+      position: absolute;
+      background-size: cover;
+      transform: perspective(1000px) rotateX(0deg); //Perspective gives the illusion of 3d.
+      width: 400px;
+      height: 190px;
+      backface-visibility: hidden; //If the backface was visible we would see the image on rotation.
+      box-shadow: 2px 2px 2px $colour5;
+      transition: transform 0.5s linear 0s;
+
+      @include mobile {
+        width: 200px;
+        height: 90px;
+      }
+    }
+
+    .rotate > .back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $colour5;
+      position: absolute;
+      background-size: cover;
+      transform: perspective(1000px) rotateX(180deg);
+      width: 400px;
+      height: 190px;
+      backface-visibility: hidden;
+      box-shadow: 2px 2px 2px $colour5;
+      transition: transform 0.5s linear 0s;
+
+      @include mobile {
+        align-items: flex-start;
+        width: 200px;
+        height: 90px;
+      }
+
+      p {
+        padding: 10px 0 0 10px;
+        font-size: 1em;
+        color: $colour1;
+        font-weight: 600;
+
+        @include mobile {
+          padding: 2px 0 0 2px;
+          font-size: 0.7em;
+        }
+      }
+
+      a {
+        position: absolute;
+        top: 85%;
+        left: 60%;
+        text-decoration: none;
+        color: $colour3;
+
+        @include mobile {
+          top: 75%;
+          left: 45%;
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    #marvel {
+      background-image: url(../images/marvel.png);
+    }
+
+    #norbert {
+      background-image: url(../images/norbert.png);
+    }
+
+    #spain {
+      background-image: url(../images/spain.png);
+    }
+
+    #bianchi {
+      background-image: url(../images/bianchi.png);
+    }
+
+    #london {
+      background-image: url(../images/london.png);
+    }
+
+    #teryaki {
+      background-image: url(../images/teryaki.png);
+    }
+
+    .rotate:hover > .front {
+      transform: perspective(600px) rotateX(-180deg);
+    }
+
+    .rotate:hover > .back {
+      transform: perspective(600px) rotateX(0deg);
+    }
+  }
+}
+// Portfolio end

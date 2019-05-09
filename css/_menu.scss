@@ -1,137 +1,26 @@
+// Menu properties accepting various arguments for positioning
 .menu-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-
-        a {
-            text-decoration: none;
-
-            li {
-                position: relative;
-                list-style: none;
-                width: 20px;
-                height: 20px;
-                margin: 20px;
-                transition: 0.5s;
-                cursor: pointer;
-                opacity: 0;
-            }
-
-            #misc {
-                animation: load 0.5s linear 2s 1 forwards;
-            }
-
-            #contact {
-                animation: load 0.7s linear 2s 1 forwards;
-            }
-
-            #training {
-                animation: load 1.1s linear 2s 1 forwards;
-            }
-
-            #portfolio {
-                animation: load 1.3s linear 2s 1 forwards;
-            }
-
-            #summary {
-                animation: load 1.5s linear 2s 1 forwards;
-            }
-
-            #skills {
-                animation: load 1.7s linear 2s 1 forwards;
-            }
-
-            #profile {
-                animation: load 1.9s linear 2s 1 forwards;
-            }
-
-            li .content {
-                position: absolute;
-                width: 225px;
-                bottom: 45px;
-                background-color: $colour3;
-                padding: 20px;
-                border-radius: 4px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                visibility: hidden;
-                opacity: 0;
-                transition: 0.5s;
-                transform: translateX(-50%) translateY(-50px);
-                border: 1px solid $colour4;
-            }
-
-
-            li .content:before {
-                content: "";
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                bottom: -14px;
-                left: 110px;
-                background-color: $colour3;
-                border-bottom: 1px solid $colour4;
-                border-right: 1px solid $colour4;
-                transform: rotate(45deg);
-            }
-
-            li .content h5 {
-                text-transform: uppercase;
-                color: $colour5;
-                margin: 0;
-                padding: 0;
-            }
-
-            #profile:before {
-                @include icons($icon1);
-            }
-
-            #skills:before {
-                @include icons($icon2);
-            }
-
-            #summary:before {
-                @include icons($icon3);
-            }
-
-            #portfolio:before {
-                @include icons($icon4);
-            }
-
-            #training:before {
-                @include icons($icon5);
-            }
-
-            #contact:before {
-                @include icons($icon6);
-            }
-
-            #misc:before {
-                @include icons($icon7);
-            }
-
-            li:hover .content {
-                visibility: visible;
-                opacity: 1;
-                transform: translateX(-50%) translateY(0px);
-            }
-        }
-    }
+  z-index: 2;
+  @include menu(
+    $margin,
+    $translate1X,
+    $translate1Y,
+    $top,
+    $left,
+    $translate2X,
+    $translate2Y
+  );
+  @include mobile() {
+    margin: 3% 0 0 0;
+  }
 }
 
 @keyframes load {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,93 @@
+//Contact start
+.contact-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: load 2s ease-in 1;
+
+  .box {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    width: 50%;
+    padding: 30px;
+    background-color: $colour2-opaque;
+    box-shadow: 0 15px 25px $colour5;
+    border-radius: 10px;
+
+    @include mobile {
+      top: 10%;
+    }
+
+    .inputBox {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 30px;
+        font-family: $font;
+        color: $colour1;
+        font-size: 1em;
+        letter-spacing: 1px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $colour1;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 30px;
+        font-family: $font;
+        color: $colour1;
+        font-size: 1em;
+        letter-spacing: 1px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $colour1;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      label {
+        position: absolute;
+        color: $colour1;
+        font-family: $font;
+        font-size: 1em;
+        letter-spacing: 1px;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      input:focus ~ label,
+      input:valid ~ label,
+      textarea:focus ~ label,
+      textarea:valid ~ label {
+        top: -18px;
+        left: 0;
+        color: $colour5;
+        font-size: 0.8em;
+      }
+    }
+
+    input[type="submit"] {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      color: $colour1;
+      background-color: $colour5;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}
+// Contact end

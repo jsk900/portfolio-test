@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Contact</title>
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="shortcut icon" href="./images/joeicon.png" type="image/x-icon" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		/>
-	</head>
-	<body>
-		<h1>Contact</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact me</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/joeicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Static square start -->
+    <div id="static-square1"></div>
+    <div id="static-square2"></div>
+    <div id="static-square3"></div>
+    <!-- Static blobs end -->
+
+    <!-- Animated floating squares start -->
+    <section class="animated-squares">
+      <div class="set">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="set set2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="set set3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Animated floating squares end -->
+
+    <!-- Contact wrapper start -->
+    <section class="contact-wrapper">
+
+      <!-- Menu start -->
+      <section class="menu-wrap">
+      <a href="./index.html"
+        ><li id="home">
+          <div class="content">
+            <h5>Home</h5>
+          </div>
+        </li></a</
+      >
+      <a href="./about.html"
+        ><li id="about">
+          <div class="content">
+            <h5>About me</h5>
+          </div>
+        </li></a
+      >
+      <a href="./summary.html"
+        ><li id="summary">
+          <div class="content">
+            <h5>Professional Summary</h5>
+          </div>
+        </li></a
+      >
+      <a href="./portfolio.html"
+        ><li id="portfolio">
+          <div class="content">
+            <h5>Portfolio</h5>
+          </div>
+        </li></a
+      >
+    </section>
+      <!-- Menu end -->
+
+      <!-- Form start -->
+      <section class="box animated bounceInDown delay-2s">
+      <form action="https://formspree.io/jsk900@yahoo.co.uk" method="POST">
+        <div class="inputBox">
+        <input type="text" name="name"required autocomplete="off"/>
+        <label for="name">Name</label>
+      </div>
+      <div class="inputBox">
+        <input
+          type="email"
+          name="email"
+         required autocomplete="off"
+        />
+        <label for="email">Email</label>
+      </div>
+        <div class="inputBox">
+        <textarea name="message" cols="50" rows="10" required autocomplete="off"></textarea>
+        <label id="textarea-label" for="message">Message</label>
+      </div>
+        <input type="submit" value="Send"></input>
+      </form>
+    </section>
+  <!-- Form end -->
+
+    </section>
+    <!-- Contact wrapper end -->
+
+    <!-- Footer start -->
+    <footer>
+      <p>&copy; Joseph Urbina 2019</p>
+      <a href="https://github.com/jsk900" target="blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://linkedin.com/in/joseph-urbina-5024a78/" target="blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </footer>
+    <!-- Footer end -->
+  </body>
 </html>

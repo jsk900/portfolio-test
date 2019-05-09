@@ -1,36 +1,33 @@
-// Background static blobs
-#static-blob1 {
+// Background static squares
+#static-square1 {
   position: absolute;
   top: 10%;
   left: 65%;
   width: 40%;
   height: 100%;
   background-color: $colour3;
-  border-radius: 97% 3% 45% 55% / 37% 88% 12% 63%;
   opacity: 0.04;
   z-index: -1;
 }
 
-#static-blob2 {
+#static-square2 {
   position: absolute;
   top: 0;
   left: 0;
   width: 40%;
   height: 100%;
   background-color: $colour4;
-  border-radius: 52% 48% 70% 30% / 33% 48% 52% 67%;
   opacity: 0.04;
   z-index: -1;
 }
 
-#static-blob3 {
+#static-square3 {
   position: absolute;
   top: -50%;
   left: 32%;
   width: 40%;
   height: 100%;
   background-color: $colour5;
-  border-radius: 48% 52% 51% 49% / 10% 52% 48% 90%;
   opacity: 0.04;
   z-index: -1;
 }

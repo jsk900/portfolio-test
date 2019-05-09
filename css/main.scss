@@ -1,83 +1,115 @@
+// All imports
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import "../css/vars&mixins";
 @import "../css/static-blobs";
+@import "../css/static-squares";
 @import "../css/blob-animations";
+@import "../css/square-animations";
 @import "../css/menu";
+@import "../css/skills-grid";
+@import "../css/summary";
+@import "../css/contact";
+@import "../css/portfolio";
+@import "../css/footer";
 
+// Resets
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-html,
-.index {
-	@include body($index-back);
+// @Include html properties
+html {
+  @include body($back);
 }
 
-.profile {
-	@include body($profile-back);
-}
-
-.skills {
-	@include body($skills-back);
-}
-
-.summary {
-	@include body($summary-back);
-}
-
+// Home page text start
 aside {
-	position: absolute;
-	top: 55%;
-	left: 36%;
-	animation: load 3s ease-in 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: load 2s ease-in 1;
 
-	h1 {
-		font-size: 3.1em;
-		letter-spacing: 2.5px;
-		color: $colour1;
-	}
+  @include mobile {
+    left: 55%;
+  }
 
-	h3 {
-		padding-top: 3px;
-		font-size: 1.3em;
-		letter-spacing: 4px;
-		color: $colour3;
-	}
+  h1 {
+    font-size: 5em;
+    letter-spacing: 2.5px;
+    color: $colour1;
+    text-shadow: 1px 1px 1px $colour5;
+
+    @include mobile {
+      font-size: 3em;
+    }
+  }
+
+  h3 {
+    padding-top: 3px;
+    font-size: 2em;
+    letter-spacing: 4px;
+    color: $colour4;
+    text-shadow: 0.2px 0.2px 0.2px $colour1;
+
+    @include mobile {
+      font-size: 1em;
+    }
+  }
 }
+// Home page text end
 
-footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 5%;
-	background-color: $colour4-opaque;
+// About me page start
+.about-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: -2;
 
-	p {
-		padding: 10px;
-		color: $colour1;
-		font-size: 0.7em;
-		filter: brightness(180%);
-	}
+  @include mobile {
+    flex-direction: column;
+    width: 70%;
+    top: -14%;
+  }
 
-	a {
-		color: $colour3;
-		filter: brightness(180%);
-	}
+  .about-text {
+    width: 45%;
+    height: auto;
 
-	a:first-of-type {
-		position: absolute;
-		bottom: 18%;
-		right: 4%;
-	}
+    @include mobile {
+      width: 100%;
+      height: auto;
+      margin: 45% 0 0 1%;
+    }
 
-	a:last-of-type {
-		position: absolute;
-		bottom: 18%;
-		right: 2%;
-	}
+    h3 {
+      color: $colour5;
+      letter-spacing: 0.1em;
+      padding-bottom: 5px;
+
+      @include mobile {
+        font-size: 0.7em;
+      }
+    }
+
+    p {
+      color: $colour5;
+      font-weight: 600px;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+
+      @include mobile {
+        font-size: 0.6em;
+      }
+    }
+  }
 }
+// About me page end

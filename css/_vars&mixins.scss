@@ -1,81 +1,185 @@
-$font: "Montserrat",
-sans-serif;
-$colour1: #F4F6F6;
+// Main Variables
+$font: "Montserrat", sans-serif;
+$colour1: #f4f6f6;
 $colour1-opaque: rgba(244, 246, 246, 0.5);
 $colour2: #959294;
 $colour2-opaque: rgba(149, 146, 148, 0.5);
-$colour3: #F1BA18;
+$colour3: #f1ba18;
 $colour3-opaque: rgba(241, 186, 24, 0.5);
-$colour4: #93593D;
+$colour4: #93593d;
 $colour4-opaque: rgba(147, 89, 61, 0.5);
-$colour5: #302A37;
-$index-back: #f4f6f6,
-#e0e3e4,
-#ced0d1,
-#bcbdbf,
-#abaaad,
-#9a989c,
-#8a878c,
-#7b767b,
-#686269,
-#554e58,
-#423c47,
-#302a37;
+$colour5: #302a37;
+$colour5-opaque: rgba(48, 42, 55, 0.5);
+$back: #f4f6f6, #e0e3e4, #ced0d1, #bcbdbf, #abaaad, #9a989c, #8a878c, #7b767b,
+  #686269, #554e58, #423c47, #302a37;
 
-$profile-back: #f4f6f6,
-#cbf5eb,
-#b1f0cb,
-#b0e79c,
-#c4d965,
-#d7bb49,
-#e49c40,
-#e97b47,
-#c65a5c,
-#944862,
-#5d3a55,
-#302a37;
+// Icon unicodes
+$icon1: "\F015";
+$icon2: "\f007";
+$icon3: "\f1c2";
+$icon4: "\f302";
+$icon5: "\f2b9";
 
-$skills-back: #959294,
-#b6929e,
-#da9095,
-#f4927e,
-#ff9d5b,
-#f69d4c,
-#ec9d3c,
-#e19d2b,
-#d18933,
-#bf7839,
-#aa673c,
-#93593d;
+// Menu positioning variables
+$margin: 20% 0 0 3%;
+$translate1X: 27%;
+$translate1Y: -70px;
+$translate2X: 27%;
+$translate2Y: 70px;
+$top: 16px;
+$left: -12px;
 
-$summary-back: #959294,
-#7b767b,
-#625b63,
-#49424c,
-#302a37;
-
-$icon1: '\f007';
-$icon2: '\f7d9';
-$icon3: '\f1c2';
-$icon4: '\f302';
-$icon5: '\f19d';
-$icon6: '\f2b9';
-$icon7: '\f074';
-$icon8: '\F015';
-
+// Mixin for menu icons with an icon variable as an argument
 @mixin icons($icon) {
-    content: $icon;
-    font-family: 'Font Awesome 5 free';
-    font-size: 1.2em;
-    font-weight: 900;
-    padding-left: 4px;
-    color: $colour4;
+  content: $icon;
+  font-family: "Font Awesome 5 free";
+  font-size: 2em;
+  font-weight: 900;
+  color: $colour3;
+  text-shadow: 0.5px 0.5px 0.5px $colour4;
 }
 
+//Mixin for mobile devices
+@mixin mobile {
+  @media (min-width: 300px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Mixin for html background with a background variable as an argument
 @mixin body($back) {
-    font-family: $font;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: linear-gradient(to right top, $back);
+  font-family: $font;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to right top, $back);
+}
+
+// Mixin for the menu with all positioning variables as arguments
+@mixin menu(
+  $margin,
+  $translate1X,
+  $translate1Y,
+  $top,
+  $left,
+  $translate2X,
+  $translate2Y
+) {
+  margin: $margin;
+  width: 5%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+
+    li {
+      position: relative;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      margin: 15px;
+      transition: 0.5s;
+      cursor: pointer;
+      opacity: 0;
+    }
+
+    #contact {
+      animation: load 0.3s linear 0.5s 1 forwards;
+    }
+
+    #portfolio {
+      animation: load 0.5s linear 0.5s 1 forwards;
+    }
+
+    #summary {
+      animation: load 0.6s linear 0.5s 1 forwards;
+    }
+
+    #about {
+      animation: load 0.8s linear 0.5s 1 forwards;
+    }
+
+    #home {
+      animation: load 0.8s linear 0.5s 1 forwards;
+    }
+
+    li .content {
+      position: absolute;
+      width: 225px;
+      bottom: 45px;
+      background-color: $colour3;
+      padding: 20px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateX($translate1X) translateY($translate1Y);
+    }
+
+    li .content:before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: $top;
+      left: $left;
+      background-color: $colour3;
+      transform: rotate(45deg);
+    }
+
+    li .content h5 {
+      text-transform: uppercase;
+      color: $colour5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #home:before {
+      @include icons($icon1);
+      @include mobile() {
+        font-size: 1.3em;
+      }
+    }
+
+    #about:before {
+      @include icons($icon2);
+      @include mobile() {
+        font-size: 1.3em;
+      }
+    }
+
+    #summary:before {
+      @include icons($icon3);
+      @include mobile() {
+        font-size: 1.3em;
+      }
+    }
+
+    #portfolio:before {
+      @include icons($icon4);
+      @include mobile() {
+        font-size: 1.3em;
+      }
+    }
+
+    #contact:before {
+      @include icons($icon5);
+      @include mobile() {
+        font-size: 1.3em;
+      }
+    }
+
+    li:hover .content {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX($translate2X) translateY($translate2Y);
+    }
+  }
 }
