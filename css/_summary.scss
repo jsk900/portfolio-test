@@ -17,14 +17,14 @@
 
     //Change grid for mobile devices
     @include mobile {
-      margin-top: 2%;
+      margin-top: 5%;
       grid-template-rows: 10px repeat(3, 1fr) 10px repeat(3, 1fr) 10px repeat(
           6,
           1fr
         ); // Fifteen rows
-      grid-template-columns: 20% 1fr 3px; // Three columns
-      grid-row-gap: 5px;
-      grid-column-gap: 3px;
+      grid-template-columns: 9% 1fr 3px; // Three columns
+      grid-row-gap: 2px;
+      grid-column-gap: 2px;
     }
 
     h2 {
