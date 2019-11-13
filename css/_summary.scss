@@ -48,17 +48,18 @@
     }
 
     #down {
-      visibility: hidden;
+      padding-left: 30%;
+      display: inline;
+      font-size: 0.9em;
+      font-weight: 600;
+      align-self: baseline;
+      color: $colour3;
+      grid-row: 1;
+      grid-column: 4 / 6;
 
       @include mobile {
-        visibility: visible;
         padding-left: 44%;
-        display: inline;
         font-size: 0.6em;
-        font-weight: 600;
-        align-self: baseline;
-        color: $colour3;
-        grid-row: 1;
         grid-column: 2 / 4;
       }
     }

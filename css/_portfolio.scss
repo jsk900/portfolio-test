@@ -4,24 +4,25 @@
   flex-wrap: nowrap;
 
   .portfolio {
-    margin-top: 12%;
+    margin-top: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 
     @include mobile {
-      margin: 8% 0 0 2%;
+      margin: 8% 0 0 10%;
     }
 
     .rotate {
       margin-bottom: 2%;
-      width: 400px;
-      height: 190px;
+      margin-left: 1%;
+      width: 200px;
+      height: 95px;
 
       @include mobile {
-        width: 200px;
-        height: 80px;
+        width: 100px;
+        height: 40px;
       }
     }
 
@@ -29,61 +30,76 @@
       position: absolute;
       background-size: cover;
       transform: perspective(1000px) rotateX(0deg); //Perspective gives the illusion of 3d.
-      width: 400px;
-      height: 190px;
+      width: 200px;
+      height: 95px;
       backface-visibility: hidden; //If the backface was visible we would see the image on rotation.
       box-shadow: 2px 2px 2px $colour5;
       transition: transform 0.5s linear 0s;
 
       @include mobile {
-        width: 200px;
-        height: 80px;
+        width: 100px;
+        height: 40px;
       }
     }
 
     .rotate > .back {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       background-color: $colour5;
       position: absolute;
       background-size: cover;
       transform: perspective(1000px) rotateX(180deg);
-      width: 400px;
-      height: 190px;
+      width: 200px;
+      height: 95px;
       backface-visibility: hidden;
       box-shadow: 2px 2px 2px $colour5;
       transition: transform 0.5s linear 0s;
 
       @include mobile {
         align-items: flex-start;
-        width: 200px;
-        height: 80px;
+        width: 100px;
+        height: 40px;
       }
 
       p {
-        padding: 10px 0 0 10px;
-        font-size: 1em;
+        padding: 5px 0 0 5px;
+        font-size: 0.8em;
         color: $colour1;
         font-weight: 600;
 
         @include mobile {
           padding: 2px 0 0 2px;
-          font-size: 0.7em;
+          font-size: 0.4em;
         }
       }
 
-      a {
+      a:first-of-type {
         position: absolute;
-        top: 85%;
-        left: 60%;
+        top: 80%;
+        left: 80%;
         text-decoration: none;
         color: $colour3;
+        font-size: 1em;
 
         @include mobile {
-          top: 75%;
-          left: 45%;
-          font-size: 0.7em;
+          top: 76%;
+          left: 70%;
+          font-size: 0.5em;
+        }
+      }
+      a:last-of-type {
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        text-decoration: none;
+        color: $colour3;
+        font-size: 1em;
+
+        @include mobile {
+          top: 76%;
+          left: 80%;
+          font-size: 0.5em;
         }
       }
     }
@@ -96,20 +112,36 @@
       background-image: url(../images/norbert.png);
     }
 
+    #blog {
+      background-image: url(../images/blog.png);
+    }
+
+    #fruits {
+      background-image: url(../images/fruits.png);
+    }
+
+    #crypto {
+      background-image: url(../images/crypto.png);
+    }
+
+    #dice {
+      background-image: url(../images/dice.png);
+    }
+
+    #recipes {
+      background-image: url(../images/recipes.png);
+    }
+
+    #spotify {
+      background-image: url(../images/spotify.png);
+    }
+
+    #weather {
+      background-image: url(../images/weather.png);
+    }
+
     #spain {
       background-image: url(../images/spain.png);
-    }
-
-    #bianchi {
-      background-image: url(../images/bianchi.png);
-    }
-
-    #london {
-      background-image: url(../images/london.png);
-    }
-
-    #teryaki {
-      background-image: url(../images/teryaki.png);
     }
 
     .rotate:hover > .front {

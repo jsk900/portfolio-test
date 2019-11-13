@@ -146,13 +146,13 @@
   #seven {
     grid-row: 7;
     grid-column: 2;
-    animation: photoshop 2s 1 linear forwards;
+    animation: express 2s 1 linear forwards;
   }
 
   #eight {
     grid-row: 8;
     grid-column: 2;
-    animation: fireworks 2s 1 linear forwards;
+    animation: mongoDB 2s 1 linear forwards;
   }
 }
 
@@ -228,7 +228,7 @@
   }
 }
 
-@keyframes photoshop {
+@keyframes express {
   0% {
     background-color: $colour3-opaque;
     width: 0;
@@ -236,11 +236,11 @@
 
   100% {
     background-color: $colour3-opaque;
-    width: 60%;
+    width: 50%;
   }
 }
 
-@keyframes fireworks {
+@keyframes mongoDB {
   0% {
     background-color: $colour3-opaque;
     width: 0;
@@ -248,7 +248,7 @@
 
   100% {
     background-color: $colour3-opaque;
-    width: 70%;
+    width: 40%;
   }
 }
 // Skills grid end
