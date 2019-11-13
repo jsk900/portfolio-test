@@ -1650,7 +1650,7 @@
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio .rotate > .back p {
     padding: 2px 0 0 2px;
-    font-size: 0.4em;
+    font-size: 0.3em;
   }
 }
 
@@ -1665,8 +1665,8 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio .rotate > .back a:first-of-type {
-    top: 76%;
-    left: 70%;
+    top: 76.5%;
+    left: 80%;
     font-size: 0.5em;
   }
 }
@@ -1674,7 +1674,7 @@
 .portfolio-wrapper .portfolio .rotate > .back a:last-of-type {
   position: absolute;
   top: 80%;
-  left: 100%;
+  left: 90%;
   text-decoration: none;
   color: #f1ba18;
   font-size: 1em;
@@ -1682,8 +1682,8 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio .rotate > .back a:last-of-type {
-    top: 76%;
-    left: 80%;
+    top: 76.5%;
+    left: 90%;
     font-size: 0.5em;
   }
 }
