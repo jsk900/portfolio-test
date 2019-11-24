@@ -1689,43 +1689,43 @@
 }
 
 .portfolio-wrapper .portfolio #marvel {
-  background-image: url(../images/marvel.png);
+  background-image: url(../images/marvel-500.png);
 }
 
 .portfolio-wrapper .portfolio #norbert {
-  background-image: url(../images/norbert.png);
+  background-image: url(../images/norbert-500.png);
 }
 
 .portfolio-wrapper .portfolio #blog {
-  background-image: url(../images/blog.png);
+  background-image: url(../images/blogs-500.png);
 }
 
 .portfolio-wrapper .portfolio #fruits {
-  background-image: url(../images/fruits.png);
+  background-image: url(../images/fruits-500.png);
 }
 
 .portfolio-wrapper .portfolio #crypto {
-  background-image: url(../images/crypto.png);
+  background-image: url(../images/crypto-500.png);
 }
 
 .portfolio-wrapper .portfolio #dice {
-  background-image: url(../images/dice.png);
+  background-image: url(../images/dice-500.png);
 }
 
 .portfolio-wrapper .portfolio #recipes {
-  background-image: url(../images/recipes.png);
+  background-image: url(../images/recipes-500.png);
 }
 
 .portfolio-wrapper .portfolio #spotify {
-  background-image: url(../images/spotify.png);
+  background-image: url(../images/spotify-500.png);
 }
 
 .portfolio-wrapper .portfolio #weather {
-  background-image: url(../images/weather.png);
+  background-image: url(../images/weather-500.png);
 }
 
 .portfolio-wrapper .portfolio #spain {
-  background-image: url(../images/spain.png);
+  background-image: url(../images/spain-500.png);
 }
 
 .portfolio-wrapper .portfolio .rotate:hover > .front {
