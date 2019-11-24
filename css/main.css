@@ -1545,7 +1545,7 @@
 }
 
 .portfolio-wrapper .portfolio {
-  margin-top: 20%;
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1561,21 +1561,21 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio {
-    margin: 8% 0 0 10%;
+    margin: 9% 0 0 4%;
   }
 }
 
 .portfolio-wrapper .portfolio .rotate {
   margin-bottom: 2%;
   margin-left: 1%;
-  width: 200px;
-  height: 95px;
+  width: 400px;
+  height: 180px;
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio .rotate {
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 90px;
   }
 }
 
@@ -1584,8 +1584,8 @@
   background-size: cover;
   -webkit-transform: perspective(1000px) rotateX(0deg);
           transform: perspective(1000px) rotateX(0deg);
-  width: 200px;
-  height: 95px;
+  width: 400px;
+  height: 180px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-box-shadow: 2px 2px 2px #302a37;
@@ -1598,8 +1598,8 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
   .portfolio-wrapper .portfolio .rotate > .front {
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 90px;
   }
 }
 
@@ -1618,8 +1618,8 @@
   background-size: cover;
   -webkit-transform: perspective(1000px) rotateX(180deg);
           transform: perspective(1000px) rotateX(180deg);
-  width: 200px;
-  height: 95px;
+  width: 400px;
+  height: 180px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-box-shadow: 2px 2px 2px #302a37;
@@ -1635,8 +1635,8 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 90px;
   }
 }
 
@@ -1689,43 +1689,27 @@
 }
 
 .portfolio-wrapper .portfolio #marvel {
-  background-image: url(../images/marvel-500.png);
+  background-image: url(../images/marvel-400.png);
 }
 
 .portfolio-wrapper .portfolio #norbert {
-  background-image: url(../images/norbert-500.png);
+  background-image: url(../images/norbert-400.png);
 }
 
 .portfolio-wrapper .portfolio #blog {
-  background-image: url(../images/blogs-500.png);
-}
-
-.portfolio-wrapper .portfolio #fruits {
-  background-image: url(../images/fruits-500.png);
-}
-
-.portfolio-wrapper .portfolio #crypto {
-  background-image: url(../images/crypto-500.png);
+  background-image: url(../images/blogs-400.png);
 }
 
 .portfolio-wrapper .portfolio #dice {
-  background-image: url(../images/dice-500.png);
-}
-
-.portfolio-wrapper .portfolio #recipes {
-  background-image: url(../images/recipes-500.png);
+  background-image: url(../images/dice-400.png);
 }
 
 .portfolio-wrapper .portfolio #spotify {
-  background-image: url(../images/spotify-500.png);
+  background-image: url(../images/spotify-400.png);
 }
 
 .portfolio-wrapper .portfolio #weather {
-  background-image: url(../images/weather-500.png);
-}
-
-.portfolio-wrapper .portfolio #spain {
-  background-image: url(../images/spain-500.png);
+  background-image: url(../images/weather-400.png);
 }
 
 .portfolio-wrapper .portfolio .rotate:hover > .front {

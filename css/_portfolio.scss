@@ -4,25 +4,25 @@
   flex-wrap: nowrap;
 
   .portfolio {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 
     @include mobile {
-      margin: 8% 0 0 10%;
+      margin: 9% 0 0 4%;
     }
 
     .rotate {
       margin-bottom: 2%;
       margin-left: 1%;
-      width: 200px;
-      height: 95px;
+      width: 400px;
+      height: 180px;
 
       @include mobile {
-        width: 100px;
-        height: 40px;
+        width: 200px;
+        height: 90px;
       }
     }
 
@@ -30,15 +30,15 @@
       position: absolute;
       background-size: cover;
       transform: perspective(1000px) rotateX(0deg); //Perspective gives the illusion of 3d.
-      width: 200px;
-      height: 95px;
+      width: 400px;
+      height: 180px;
       backface-visibility: hidden; //If the backface was visible we would see the image on rotation.
       box-shadow: 2px 2px 2px $colour5;
       transition: transform 0.5s linear 0s;
 
       @include mobile {
-        width: 100px;
-        height: 40px;
+        width: 200px;
+        height: 90px;
       }
     }
 
@@ -50,16 +50,16 @@
       position: absolute;
       background-size: cover;
       transform: perspective(1000px) rotateX(180deg);
-      width: 200px;
-      height: 95px;
+      width: 400px;
+      height: 180px;
       backface-visibility: hidden;
       box-shadow: 2px 2px 2px $colour5;
       transition: transform 0.5s linear 0s;
 
       @include mobile {
         align-items: flex-start;
-        width: 100px;
-        height: 40px;
+        width: 200px;
+        height: 90px;
       }
 
       p {
@@ -105,43 +105,27 @@
     }
 
     #marvel {
-      background-image: url(../images/marvel-500.png);
+      background-image: url(../images/marvel-400.png);
     }
 
     #norbert {
-      background-image: url(../images/norbert-500.png);
+      background-image: url(../images/norbert-400.png);
     }
 
     #blog {
-      background-image: url(../images/blogs-500.png);
-    }
-
-    #fruits {
-      background-image: url(../images/fruits-500.png);
-    }
-
-    #crypto {
-      background-image: url(../images/crypto-500.png);
+      background-image: url(../images/blogs-400.png);
     }
 
     #dice {
-      background-image: url(../images/dice-500.png);
-    }
-
-    #recipes {
-      background-image: url(../images/recipes-500.png);
+      background-image: url(../images/dice-400.png);
     }
 
     #spotify {
-      background-image: url(../images/spotify-500.png);
+      background-image: url(../images/spotify-400.png);
     }
 
     #weather {
-      background-image: url(../images/weather-500.png);
-    }
-
-    #spain {
-      background-image: url(../images/spain-500.png);
+      background-image: url(../images/weather-400.png);
     }
 
     .rotate:hover > .front {
